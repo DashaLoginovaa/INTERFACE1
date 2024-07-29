@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace INTERFACE1
 {
-    internal interface ICalculator
+    public interface ILogger
     {
-        double Calculate(double x, double y);
+        void Error(string message);
+        void Event(string message);
     }
 }

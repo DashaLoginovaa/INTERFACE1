@@ -8,14 +8,10 @@ namespace INTERFACE1
 {
     internal class Calculator: ICalculator
     {
-        public double Calculate()
+        public double Calculate(double x, double y)
         {
-            Console.WriteLine("Введите два числа");
-            double x = Convert.ToDouble(Console.ReadLine());
-            double y = Convert.ToDouble(Console.ReadLine());
-            double z = x + y;
-            Console.WriteLine("Сумма равна" + " " + z);
-            return z;
+            return x + y;
         }
+
     }
 }
